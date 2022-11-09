@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js"></script>
+    <title>CV Selaimessa</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="Main-menu">
+          <a href=".">Home</a> <a href="http://google.fi"> Google link</a>
+        </div>
+      </nav>
+      <h1>Mock CV</h1>
+    </header>
+    <main>
+      <p>Name: <strong>Juho Spoof</strong></p>
+      <p>
+        Home page: <a href="http://google.fi"><em>Google.fi</em></a>
+      </p>
+      <img src="images/untitled22.png" alt="Me" />
+
+      <h2>School history</h2>
+      <!--
+				<p>LUT 2020-</p>
+				<p>TTY 2013-2019</p>
+				<p>Jokela 2009-2012</p>
+			-->
+
+      <table>
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Years</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LUT</td>
+            <td>2020-</td>
+            <td>Information technologies</td>
+          </tr>
+          <tr>
+            <td>TUNI</td>
+            <td>2013-2019</td>
+            <td>Electrical engineering</td>
+          </tr>
+          <tr>
+            <td>Jokela High School</td>
+            <td>2009-2011</td>
+            <td>General studies</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+      <!-- line break-->
+
+      <h2>Language skills</h2>
+      <p>Finnish</p>
+      <p>English</p>
+
+      <h2>Leave a note</h2>
+      <!--<form action="" method="GET">-->
+      <fieldset>
+        <legend>Information:</legend>
+        <label for="fname">First name</label>
+        <input type="text" name="fname" id="fname" placeholder="First name" />
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname" placeholder="Last name" />
+        <label for="age">Age:</label>
+        <input type="range" name="age" id="age" min="0" max="130" />
+      </fieldset>
+
+      <label for="mood">What is your mood:</label>
+      <select id="mood" name="mood">
+        <option value="perfect">Perfect</option>
+        <option value="ok">Ok</option>
+        <option value="bad">Bad</option>
+      </select>
+      <br />
+
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Leave a note.."
+      ></textarea>
+
+      <!--<input type="submit" value="Submit" />-->
+      <button id="add-note">Add note</button>
+      <button id="remove-note">Remove note</button>
+      <!--</form>-->
+
+      <div id="notes"></div>
+    </main>
+
+    <footer>
+      <p>This is a <span class="red"> HTML test mock CV</span></p>
+    </footer>
+  </body>
+</html>
